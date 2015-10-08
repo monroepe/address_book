@@ -9,6 +9,15 @@ angular.module('myApp.addressBook', ['ngRoute'])
   });
 }])
 
-.controller('AddressBookCtrl', [function() {
-
+.controller('AddressBookCtrl', ['$scope', function($scope) {
+  $scope.contacts = [
+    {
+      name: 'Peter',
+      phone: '773-555-4444'
+    },
+    {
+      name: 'Cristina',
+      phone: '857-777-8888'
+    }
+  ];
 }]);
